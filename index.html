@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ojas Sports Club | Train Like a Pro</title>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="football.html">
+    <link rel="stylesheet" href="basketball.html">
+    <link rel="stylesheet" href="Badminton.html">
+    <link rel="stylesheet" href="Baseball.html">
+    <link rel="stylesheet" href="Bowling.html">
+    <link rel="stylesheet" href="cricket.html">
+    <link rel="stylesheet" href="Gym.html">
+    <link rel="stylesheet" href="Registration Success.html">
+    <link rel="stylesheet" href="Swimming.html">
+    <link rel="stylesheet" href="Table Tennis.html">
+    <link rel="stylesheet" href="Volleyball.html">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <a href="#home" class="logo">OJAS<span>SPORTS</span></a>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#grounds">Grounds</a></li>
+            <li><a href="#games">Games</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#register" class="btn-join">Register</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <img src="Image/logoc-1 (1).webp" alt="" width="200px">
+        <h1>Welcome to CIMAGE Ojas Sports<span>2025</span></h1>
+        <p>Welcome to Ojas Sports. Where passion meets performance and champions are made.</p>
+        <button class="btn-hero" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">About Ojas</button>
+    </section>
+
+    <!-- STATS COUNTER -->
+    <div class="stats">
+        <div class="stat-item">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Registed Member</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">100+</div>
+            <div class="stat-label">Active Members</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">12</div>
+            <div class="stat-label">Championships Won</div>
+        </div>
+    </div>
+
+    <!-- NEW SECTION: ABOUT OJAS SPORTS -->
+    <section id="about" class="section">
+        <div class="section-header">
+            <h2>About Ojas Sports</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="Image/Gemini_Generated_Image_wicpqmwicpqmwicp.png" alt="About Ojas Sports">
+            </div>
+            <div class="about-text">
+                <h3 style="font-size: 2rem; margin-bottom: 1rem; color: var(--primary-color);">Igniting the Spirit of Victory</h3>
+                <p style="margin-bottom: 1.5rem; color: var(--text-gray); font-size: 1.05rem;">
+                    "Ojas" signifies vigor, vitality, and the radiant energy of life. At Ojas Sports, we embody this spirit in everything we do. Founded with the mission to revolutionize athletic training, we provide a platform where talent is nurtured, limits are pushed, and sportsmanship is celebrated.
+                </p>
+                <p style="margin-bottom: 1.5rem; color: var(--text-gray);">
+                    Whether you are an aspiring Olympian or a weekend warrior, Ojas Sports offers a community that empowers you to reach your peak potential. We believe that true strength comes from within, and we are here to help you unleash it.
+                </p>
+                <ul class="about-list">
+                    <li><i class="fas fa-check-circle"></i> Premier Annual Sports Meet organizing committee</li>
+                    <li><i class="fas fa-check-circle"></i> Holisitic development programs for youth athletes</li>
+                    <li><i class="fas fa-check-circle"></i> State-of-the-art infrastructure and safety standards</li>
+                    <li><i class="fas fa-check-circle"></i> Community of 2000+ dedicated athletes</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- GROUNDS SECTION -->
+    <section id="grounds" class="section">
+        <div class="section-header">
+            <h2>Our Grounds & Facilities</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="grounds-grid">
+            <div class="ground-item">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Main Stadium">
+                <div class="ground-overlay">
+                    <h3>Olympic Stadium</h3>
+                    <p>Standard 400m track and professional turf.</p>
+                </div>
+            </div>
+            <div class="ground-item">
+                <img src="https://images.unsplash.com/photo-1504450758481-7338eba7524a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Indoor Arena">
+                <div class="ground-overlay">
+                    <h3>Indoor Arena</h3>
+                    <p>Climate controlled multi-sport complex.</p>
+                </div>
+            </div>
+            <div class="ground-item">
+                <img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Swimming Pool">
+                <div class="ground-overlay">
+                    <h3>Aquatic Center</h3>
+                    <p>50m Olympic size swimming pool.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GAMES SECTION -->
+    <section id="games" class="section" style="background-color: #1a1a1a;">
+        <div class="section-header">
+            <h2>All Games</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="games-grid">
+        <a href="football.html">
+                <div class="game-card">
+                <i class="fas fa-futbol"></i>
+                <h3>Football</h3>
+            </div>
+        </a>
+        <a href="basketball.html">
+                <div class="game-card">
+                <i class="fas fa-basketball-ball"></i>
+                <h3>Basketball</h3>
+            </div>
+        </a>
+        <a href="Table Tennis.html">
+            <div class="game-card">
+                <i class="fas fa-table-tennis"></i>
+                <h3>Table Tennis</h3>
+            </div>
+        </a>
+        <a href="Volleyball.html">
+            <div class="game-card">
+                <i class="fas fa-volleyball-ball"></i>
+                <h3>Volleyball</h3>
+            </div>
+        </a>
+        <a href="Baseball.html">
+            <div class="game-card">
+                <i class="fas fa-baseball-ball"></i>
+                <h3>Baseball</h3>
+            </div>
+        </a>
+        <a href="Athletics.html">
+            <div class="game-card">
+                <i class="fas fa-running"></i>
+                <h3>Athletics</h3>
+            </div>
+        </a>
+        <a href="Swimming.html">
+                <div class="game-card">
+                <i class="fas fa-swimmer"></i>
+                <h3>Swimming</h3>
+            </div>
+        </a>
+        <a href="Gym.html">
+            <div class="game-card">
+                <i class="fas fa-dumbbell"></i>
+                <h3>Gym</h3>
+            </div>
+        </a>
+        <a href="Bowling.html">
+            <div class="game-card">
+                <i class="fas fa-bowling-ball"></i>
+                <h3>Bowling</h3>
+            </div>
+        </a>
+        <a href="Chess.html">
+                <div class="game-card">
+                <i class="fas fa-chess-knight"></i>
+                <h3>Chess</h3>
+            </div>
+        </a>
+        <a href="cricket.html">
+                <div class="game-card">
+                <i class="fas fa-baseball-bat-ball"></i>
+                <h3>Cricket</h3>
+            </div>
+        </a>
+        <a href="Badminton.html">
+                <div class="game-card">
+                <i class="fas fa-feather"></i>
+                <h3>Badminton</h3>
+            </div>
+        </a>
+        </div>
+    </section>
+
+    <!-- PROGRAMS SECTION -->
+    <section id="programs" class="section">
+        <div class="section-header">
+            <h2>Featured Training</h2>
+            <div class="divider"></div>
+        </div>
+        
+        <div class="programs-grid">
+            <!-- Basketball Card -->
+            <div class="program-card">
+                <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Basketball" class="card-image">
+                <div class="card-content">
+                    <div class="card-icon"><i class="fas fa-basketball-ball"></i></div>
+                    <h3 class="card-title">Basketball Elite</h3>
+                    <p class="card-text">High-intensity drills, court vision training, and competitive league play for all ages.</p>
+                    <a href="basketball.html" class="btn-card">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Football Card -->
+            <div class="program-card">
+                <img src="Image/Gemini_Generated_Image_e8nwb3e8nwb3e8nw.png" alt="Football" class="card-image">
+                <div class="card-content">
+                    <div class="card-icon"><i class="fas fa-futbol"></i></div>
+                    <h3 class="card-title">Football</h3>
+                    <p class="card-text">Develop ball control, tactical awareness, and physical conditioning on our turf fields.</p>
+                    <a href="football.html" class="btn-card">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Tennis Card -->
+            <div class="program-card">
+                <img src="https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Tennis" class="card-image">
+                <div class="card-content">
+                    <div class="card-icon"><i class="fas fa-table-tennis"></i></div>
+                    <h3 class="card-title">Tennis Academy</h3>
+                    <p class="card-text">Individual and group lessons focusing on serve technique, agility, and mental game.</p>
+                    <a href="Table Tennis.html" class="btn-card">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCHEDULE SECTION -->
+    <section id="schedule" class="section" style="background-color: #1a1a1a;">
+        <div class="section-header">
+            <h2>Upcoming Matches</h2>
+            <div class="divider"></div>
+        </div>
+
+        <div style="overflow-x: auto;">
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Sport</th>
+                        <th>Matchup</th>
+                        <th>Time</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Oct 24, 2025</td>
+                        <td>Basketball</td>
+                        <td><span class="team-name">Ojas Wolves</span> vs. City Tigers</td>
+                        <td class="match-time">18:00 PM</td>
+                        <td><span class="status-live">LIVE</span></td>
+                    </tr>
+                    <tr>
+                        <td>Oct 26, 2025</td>
+                        <td>Soccer</td>
+                        <td><span class="team-name">Ojas United</span> vs. West End FC</td>
+                        <td class="match-time">15:30 PM</td>
+                        <td>Upcoming</td>
+                    </tr>
+                    <tr>
+                        <td>Oct 28, 2025</td>
+                        <td>Tennis</td>
+                        <td><span class="team-name">Semi-Finals</span> (Singles)</td>
+                        <td class="match-time">10:00 AM</td>
+                        <td>Upcoming</td>
+                    </tr>
+                    <tr>
+                        <td>Oct 30, 2025</td>
+                        <td>Swimming</td>
+                        <td><span class="team-name">Regional Meet</span></td>
+                        <td class="match-time">09:00 AM</td>
+                        <td>Upcoming</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- NEW SECTION: REGISTRATION FORM -->
+    <section id="register" class="section register-section">
+        <div class="section-header">
+            <h2>Registration</h2>
+            <div class="divider"></div>
+            <p style="margin-top: 1rem;">Sign up for the Ojas Sports season.</p>
+        </div>
+        
+        <form class="register-form" onsubmit="event.preventDefault(); alert('Registration Successful! Welcome to Ojas Sports.');">
+            <div class="form-row">
+                <div class="form-group">
+                    <label>First Name</label>
+                    <input type="text" class="form-control" placeholder="First Name" required>
+                </div>
+                <div class="form-group">
+                    <label>Last Name</label>
+                    <input type="text" class="form-control" placeholder="Last Name" required>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" class="form-control" placeholder="email@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" class="form-control" placeholder="+1 (555) 000-0000" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Age</label>
+                    <input type="number" class="form-control" placeholder="Age" min="5" max="99" required>
+                </div>
+                <div class="form-group">
+                    <label>Gender</label>
+                    <select class="form-control">
+                        <option>Select Gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Select Sport</label>
+                    <select class="form-control">
+                        <option>Football</option>
+                        <option>Basketball</option>
+                        <option>Tennis</option>
+                        <option>Swimming</option>
+                        <option>Athletics</option>
+                        <option>Cricket</option>
+                        <option>Vollyball</option>
+                        <option>Baseball</option>
+                        <option>Gym</option>
+                        <option>Bowing</option>
+                        <option>Chess</option>
+                        <option>Badminton</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Course</label>
+                    <select class="form-control">
+                        <option>BCA</option>
+                        <option>Bsc-IT</option>
+                        <option>BBA</option>
+                        <option>MCA</option>
+                        <option>B-Com</option>
+                        <option>MBA</option>
+                    </select>
+                </div>
+            </div>
+
+            <a href="Registration Success.html"><button type="submit" class="btn-submit" style="width: 100%; margin-top: 1rem;">
+                Complete Registration</a></button></a>
+        </form>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>General Inquiries</h3>
+                <p style="margin-bottom: 2rem; color: #b0bec5;">For general questions, partnerships, or facility rental.</p>
+                
+                <div class="info-item">
+                    <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div>
+                        <h4>Location</h4>
+                        <p style="color: #b0bec5;">16C Patliputra, Bihar 800010</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                    <div>
+                        <h4>Phone</h4>
+                        <p style="color: #b0bec5;">+91 9835024444</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                    <div>
+                        <h4>Email</h4>
+                        <p style="color: #b0bec5;">info@catalystcollege.in</p>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you for your message! We will contact you shortly.');">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Subject">
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo">OJAS<span>SPORTS</span></div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p class="copyright">&copy; 2025 Ojas Sports Club. All rights reserved.</p>
+    </footer>
+
+    <!-- JAVASCRIPT FOR MOBILE MENU -->
+    <script>
+        const menuToggle = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            
+            // Icon Toggle
+            const icon = menuToggle.querySelector('i');
+            if (navLinks.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                const icon = menuToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // Smooth scrolling fallback for older browsers
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volleyball Details | Ojas Sports Club</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- INTERNAL CSS --- */
+        :root {
+            --primary-color: #00e676; /* Neon Green */
+            --secondary-color: #212121; /* Dark Grey */
+            --text-light: #ffffff;
+            --text-gray: #b0bec5;
+            --bg-dark: #121212;
+            --bg-card: #1e1e1e;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 { font-family: 'Oswald', sans-serif; text-transform: uppercase; }
+        a { text-decoration: none; color: inherit; }
+
+        /* Navigation */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 5%;
+            background-color: rgba(18, 18, 18, 0.95);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .logo { font-size: 2rem; font-weight: 700; color: var(--text-light); }
+        .logo span { color: var(--primary-color); }
+
+        .back-link {
+            color: var(--text-gray);
+            font-weight: 500;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        .back-link:hover { color: var(--primary-color); }
+
+        /* Volleyball Specific Header */
+        .volleyball-header {
+            height: 50vh;
+            /* Direct Image URL for Volleyball */
+            background-image: url('https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 80px;
+        }
+
+        .volleyball-header::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.7);
+        }
+
+        .game-title {
+            position: relative;
+            font-size: 4rem;
+            color: var(--primary-color);
+            z-index: 1;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+
+        .detail-card {
+            background-color: var(--bg-card);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .detail-card h2 {
+            margin-bottom: 1rem;
+            color: var(--text-light);
+            font-size: 1.8rem;
+        }
+
+        .detail-card p {
+            color: var(--text-gray);
+            margin-bottom: 1rem;
+        }
+
+        .rules-list, .schedule-list {
+            list-style: none;
+        }
+
+        .rules-list li, .schedule-list li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--text-gray);
+        }
+
+        .rules-list li::before {
+            content: '•';
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+        }
+
+        .schedule-list li::before {
+            content: '\f017'; /* Clock icon */
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+            font-size: 1rem;
+        }
+
+        .btn-register {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            background-color: var(--primary-color);
+            color: #000;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border-radius: 4px;
+            text-transform: uppercase;
+            transition: 0.3s;
+            margin-top: 2rem;
+        }
+
+        .btn-register:hover {
+            background-color: #00b359;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            background-color: #000;
+            padding: 2rem;
+            text-align: center;
+            border-top: 1px solid #333;
+            margin-top: auto;
+        }
+
+        @media (max-width: 768px) {
+            .game-title { font-size: 2.5rem; }
+            .volleyball-header { height: 40vh; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">OJAS<span>SPORTS</span></a>
+        <a href="index.html#games" class="back-link"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    </nav>
+
+    <!-- VOLLEYBALL CONTENT -->
+    <header class="volleyball-header">
+        <h1 class="game-title">Volleyball</h1>
+    </header>
+
+    <div class="container">
+        <!-- Description -->
+        <div class="detail-card">
+            <h2>Overview</h2>
+            <p>Join the high-flying action at Ojas Sports. Our volleyball program teaches spiking mechanics, serving strategies, defensive formations, and team coordination on professional indoor courts.</p>
+        </div>
+
+        <!-- Rules -->
+        <div class="detail-card">
+            <h2>Key Rules</h2>
+            <ul class="rules-list">
+                <li>Played by two teams of 6 players on a court divided by a net.</li>
+                <li>Maximum of 3 touches allowed per side to return the ball.</li>
+                <li>The ball must not touch the floor on your side.</li>
+                <li>Players must rotate clockwise each time they win the serve.</li>
+            </ul>
+        </div>
+
+        <!-- Schedule -->
+        <div class="detail-card">
+            <h2>Training Schedule</h2>
+            <ul class="schedule-list">
+                <li>Mon-Wed-Fri: 5:30 PM - 7:30 PM (Team Practice)</li>
+                <li>Saturday: 9:00 AM - 11:00 AM (Skill Drills)</li>
+                <li>Sunday: Club League Matches (10:00 AM onwards)</li>
+            </ul>
+        </div>
+
+        <!-- Register Button -->
+        <a href="index.html#register" class="btn-register">Register for Volleyball</a>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Ojas Sports Club</p>
+    </footer>
+
+</body>
+</html>
